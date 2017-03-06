@@ -14,4 +14,5 @@ angular.module('connectSchoolApp')
       'AngularJS',
       'Karma'
     ];
+    console.log(1231);
   });
