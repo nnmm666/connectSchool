@@ -4,16 +4,38 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>AMBIXO - HTML5 Parallax One Page Portfolio Responsive Template</title>
-    <link href="rs-plugin/css/settings.css" rel="stylesheet" />
-    <link href="styles/bootstrap.min.css" rel="stylesheet">
-    <link href="styles/ambixo.css" rel="stylesheet">
+    <!-- <link href="rs-plugin/css/settings.css" rel="stylesheet" /> -->
+    <link href="./styles/bootstrap.min.css" rel="stylesheet">
+    <link href="./styles/ambixo.css" rel="stylesheet">
 
     <!-- Script -->
-     <script src="./include/jquery.min.js"></script>
-    <script src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
-    <script src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-    <script src="./include/portfolio/modernizr.custom.js"></script>
-    <script src="./include/testimonial/jquery.quovolver.min.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <!-- <script src="./include/services/jquery.easypiechart.min.js"></script> -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>   
+    <!-- <script src="./include/contact-form.js"></script> -->
+
+    <script src="./include/parallax/jquery.parallax-1.1.3.js"></script>
+    <script src="./include/parallax/jquery.localscroll-1.2.7-min.js"></script>
+    <script src="./include/parallax/jquery.scrollTo-min.js"></script>
+
+
+
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/about.js"></script>
 
     <!-- Favicons -->    
     <link rel="shortcut icon" href="favicon.ico">
@@ -25,7 +47,6 @@
     <link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/apple-touch-icon-120x120.png">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144x144.png">
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/apple-touch-icon-152x152.png">
- 
 
     <!-- SEO Meta Tags -->
     <!-- <meta name="description" content="" /> -->
@@ -38,19 +59,12 @@
     <link href='http://fonts.googleapis.com/css?family=Signika:300' rel='stylesheet' type='text/css'>
 
     <!-- Font Awesome -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->
 
      <!-- added  here !!!!-->
 
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css(.) styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-     --><!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
@@ -121,36 +135,13 @@
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
+    
 
-      <!-- JavaScripts -->
-
-    <script src="./include/services/jquery.easypiechart.min.js"></script>
-    <script src="./include/carousel/jquery.bxslider.min.js"></script>
-    <script src="./include/portfolio/grid.js"></script>
-    <script src="./include/isotope/jquery.isotope.min.js"></script>
-    <script src="./include/contact-form.js"></script>
-    <script src="./include/parallax/jquery.parallax-1.1.3.js"></script>
-    <script src="./include/parallax/jquery.localscroll-1.2.7-min.js"></script>
-    <script src="./include/parallax/jquery.scrollTo-min.js"></script>
     <script src="./include/ambixo.js"></script>
+    <script src="./include/portfolio/grid.js"></script>
 
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="bower_components/angular-animate/angular-animate.js"></script>
-    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
-    <script src="bower_components/angular-resource/angular-resource.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
-    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <script src="bower_components/angular-touch/angular-touch.js"></script>
-    <!-- endbower -->
+
     <!-- endbuild -->
-
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
-        <!-- endbuild -->
 
 </body>
 </html>

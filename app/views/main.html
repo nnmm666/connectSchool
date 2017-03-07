@@ -39,7 +39,7 @@
                   Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos.
                   Maecenas elementum augue nec nisl. Proin auctor lorem at nibh. Curabitur nulla purus, feugiat id, elementum in, lobortis quis, pede. Vivamus sodales adipiscing sapien.
                 </p>
-                <ul class="social-account container-fluid">
+                <!-- <ul class="social-account container-fluid"> -->
                   <li><address><a class="tool" data-placement="bottom" rel="me" href="#" title="Follow me on Facebook"><i class="fa fa-facebook"></i></a></address></li>
                   <li><address><a class="tool" data-placement="bottom" rel="me" href="#" title="Follow me on Google+"><i class="fa fa-google-plus"></i></a></address></li>
                   <li><address><a class="tool" data-placement="bottom" rel="me" href="#" title="Follow me on Twitter"><i class="fa fa-twitter"></i></a></address></li>
@@ -52,7 +52,7 @@
                   <li><address><a class="tool" data-placement="bottom" rel="me" href="#" title="Follow me on Dribbble"><i class="fa fa-dribbble"></i></a></address></li>
                   <li><address><a class="tool" data-placement="bottom" rel="me" href="#" title="Follow my Feeds"><i class="fa fa-rss"></i></a></address></li>
                   <li><address><a class="tool" data-placement="bottom" rel="me" href="#" title="My e-mail"><i class="fa fa-envelope-o"></i></a></address></li>
-                 </ul>
+                 <!-- </ul> -->
               </div>
             </div>
             <div class="about col-sm-6"><img class="img-responsive" src="images/man.png" alt="" /></div>
@@ -229,9 +229,18 @@
            <div>
             <h3 class="text-center">FAQ</h3>
             
+            <div class = "faqMenus" ng-repeat="(key, value) in menus" ng-click="showData(key)">
+               {{ key }}
+            </div>
+             <div class="faqContents" ng-repeat="(title , content) in getContent()">
+                  <div class="faqContentTitle">
+                      title : {{ title }}
+                  </div>
+                  <div class="faqContentContent">
+                      content : {{ content }}
+                  </div>
+              </div>
           </div>
-
-          sdfasdfdas
         </div>
     </section>
 

@@ -10,7 +10,7 @@
 var $event = $.event,
 $special,
 resizeTimeout;
-console.log('sdfsdf');
+
 $special = $event.special.debouncedresize = {
 	setup: function() {
 		$( this ).on( "resize", $special.handler );
@@ -186,6 +186,7 @@ var Grid = (function() {
 			'msTransition' : 'MSTransitionEnd',
 			'transition' : 'transitionend'
 		},
+		
 		transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
 		// support for csstransitions
 		support = Modernizr.csstransitions,
