@@ -10,7 +10,7 @@
 var $event = $.event,
 $special,
 resizeTimeout;
-
+console.log('sdfsdf');
 $special = $event.special.debouncedresize = {
 	setup: function() {
 		$( this ).on( "resize", $special.handler );

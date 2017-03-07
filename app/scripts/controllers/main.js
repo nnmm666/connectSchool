@@ -2,17 +2,18 @@
 
 /**
  * @ngdoc function
- * @name connectSchoolApp.controller:MainCtrl
+ * @name testApp.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the connectSchoolApp
+ * Controller of the testApp
  */
-angular.module('connectSchoolApp')
+angular.module('testApp')
   .controller('MainCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
-    console.log(1231);
+    console.log('main script');
+
   });

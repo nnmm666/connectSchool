@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc overview
- * @name connectSchoolApp
+ * @name testApp
  * @description
- * # connectSchoolApp
+ * # testApp
  *
  * Main module of the application.
  */
- angular
-  .module('connectSchoolApp', [
+angular
+  .module('testApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
