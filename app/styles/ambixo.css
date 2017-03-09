@@ -98,6 +98,7 @@ input {
 
 #activities {
 	background-color: white;
+	height:100%;
 }
 
 header span,
@@ -200,6 +201,18 @@ svg {
 }
 
 /* Main Nav */
+.activityContainer {
+	background : url('../images/activity_bg.png') no-repeat;
+	background-color: #e6e6e6;
+	background-size: 100%;
+}
+
+.activityContainerWrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+
 
 #main-nav {
 	float: right;
@@ -288,7 +301,7 @@ svg {
 /* Section */
 
 section .container {
-	padding: 125px 0;
+	padding: 50px 0 70px;
 	position: relative;
 }
 
@@ -299,8 +312,7 @@ section h3 {
 
 section p {
 	font-size: 1.4em;
-	font-weight: 300;
-	line-height: 2;
+	line-height: 1.5;
 }
 
 
@@ -508,17 +520,70 @@ section#about-2 .container {
 	display: inline-block;
 	margin: 10px 5px 0 5px;
 	vertical-align: top;
-	height: 250px;
+	height: 586px;
+	max-width: 498px;
+	background-color: #f7f3fa;
+	color: black;
 }
 
-.og-grid li > a,
-.og-grid li > a img {
+.introduceActivityWrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.connectActivityContent {
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+.connectActivityContent span div {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 40px;
+}
+
+.introduceActivityWrapper ul li {	
+	line-height: 1;
+	padding: 0 20px 0 50px ;
+}
+.connectActivityContent.title{
+	color: #62269e;
+	margin-bottom: 23px;
+	font-size: 2.4em;	
+}
+
+.connectActivityContentTitle {
+	font-size: 1.4em;	
+}
+
+.contetnActivityDesc a {
+	color: #2cafa1;
+}
+
+#recrute{
+	background: url('../images/includeAc_bg.png');
+	background-position: bottom;
+	background-color: white;
+	background-repeat: no-repeat;
+    background-size: 100% 30%;
+}
+
+.og-grid li > a{
 	border: none;
 	outline: none;
 	display: block;
 	position: relative;
 }
 
+.connectSchoolSchedule {
+	margin: 40px auto 76px;
+	background: url('../images/plan_1.png');
+	background-size: 100%;
+	max-width: 1016px;
+	width: 100%;
+	height: 263px;
+	display: block;
+}
 .og-grid li.og-expanded > a::after {
 	top: auto;
 	border: solid transparent;
@@ -776,7 +841,7 @@ section#about-2 .container {
 .tmtimeline > li .tmtime {
     display: block;
     width: 25%;
-    padding-right: 100px;
+    padding-right: 140px;
     position: absolute;
 }
  
@@ -785,19 +850,20 @@ section#about-2 .container {
     text-align: right;
     font-size: 1.8em;
     line-height: 2;
-    color: rgba(255,255,255,0.9);
+    color: black;
+    min-width: 100px;
 }
  
 .tmtimeline > li .tmlabel {
     margin: 0 0 15px 25%;
     color: #fff;
-    padding: 2em;
+    padding: 1.5em 0 0.3em 1em;
     font-size: 1.2em;
     font-weight: 300;
     line-height: 1.4;
     position: relative;
     border-radius: 6px;
-    background: rgba(255,255,255,0.9);
+    background: rgba(255,255,255,255);
 }
  
 .tmtimeline > li .tmlabel h4 {
@@ -823,7 +889,7 @@ section#about-2 .container {
     pointer-events: none;
     border-width: 10px;
     top: 10px;
-    border-right-color: rgba(255,255,255,0.9);
+    border-right-color: rgba(255,255,255,255);
 }
  
 .tmtimeline > li .tmicon {
@@ -839,12 +905,13 @@ section#about-2 .container {
     -webkit-font-smoothing: antialiased;
     position: absolute;
     color: #fff;
-    background: #D56157;
+    background: #62269e;
     border-radius: 50%;
     box-shadow: 0 0 0 6px #E4E6DE;
     text-align: center;
     left: 20%;
     top: 0;
+    font-size: 20px;
     margin: 0 0 0 -25px;
 }
  
@@ -1189,7 +1256,30 @@ section#about-2 .container {
 	}
 
 	.introduceDesc {
-		font-size: 3vw !important;
+		font-size: 2.5vw !important;
+	}
+
+	.faqMenus {
+		height: 2.5vw !important;
+	}
+
+	.faqContentContent {
+		font-size: 2vw !important;	
+	}
+
+	.faqContentTitle {
+		font-size: 2vw !important;
+	}
+
+	.faqAnswer .faqAnswerData {
+		font-size: 2vw !important;
+	}
+
+	.connectActivityContentTitle {
+		font-size: 2vw !important;
+	}
+	.contetnActivityDesc {
+		font-size: 1.5vw !important;
 	}
 
 }
@@ -1276,12 +1366,30 @@ section#about-2 .container {
 	    top: 100px;
 	}*/
 }
+
+.contetnActivityDesc {
+	min-width: 300px;
+	
+}
 @media only screen and (max-width: 640px) {
 
 	/*.header {
 		height: 140px;
 	}*/
+	.connectActivityContentTitle {
+		font-size: 2.5vw !important;
+	}
+	.contetnActivityDesc {
+		font-size: 2.5vw !important;
+	}
 
+	.faqContentContent {
+		font-size: 2vw !important;	
+	}
+
+	.faqContentTitle {
+		font-size: 2vw !important;
+	}
 
 	.navbar {
 		min-height: 50px;
@@ -1396,9 +1504,22 @@ section#about-2 .container {
 }
 
 .introduceDivideImage {
-	margin:2px 0 16px 0;
+	display: block;
+
+	margin:2px auto 16px ;
 }
 
+.acitvityContainerTitle {
+	font-family: NanumSquareOTFB;
+	font-size: 28px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: #31bbb1;
+}
 .introduceSubtitle {
 	height: 55px;
 	font-family: NanumGothicOTF;
@@ -1412,8 +1533,12 @@ section#about-2 .container {
 	color: #ffffff;
 }
 
+.faqContents {
+	font-size: 1vw;
+}
+
 .introduceDesc {
-	margin-top: 8px;
+	margin-top: 9px;
 	height: 58px;
 	font-family: NanumGothicOTF;
 	font-size: 1.2vw;
