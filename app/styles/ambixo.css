@@ -7,6 +7,27 @@
   
 -------------------------------------------------------------------------*/
 
+@font-face{
+    font-family:NanumSquareLight;
+    font-style: normal;
+    font-weight: 0;
+    src: url('font/NanumSquareLight.ttf') format('woff');
+}
+
+@font-face{
+    font-family:NanumSquareRegular;
+    font-style: normal;
+    font-weight: 400;
+    src: url('font/NanumSquareRegular.ttf') format('woff');
+}
+
+@font-face{
+    font-family:NanumSquareBold;
+    font-style: normal;
+    font-weight: 400;
+    src: url('font/NanumSquareBold.ttf') format('woff');
+}
+
 @charset "UTF-8";
 
 html {
@@ -1279,15 +1300,16 @@ section#about-2 .container {
 	}
 
 	.introduceMoto {
-		font-size: 3vw !important;
+		/*font-size: 3vw !important;*/
 	}
 
 	.introduceSubtitle {
-		font-size: 5vw !important;
+		/*font-size: 5vw !important;*/
 	}
 
 	.introduceDesc {
-		font-size: 2.5vw !important;
+		/*font-size: 2.5vw !important;*/
+		font-size: 20px;
 	}
 
 	.faqMenus {
@@ -1335,7 +1357,7 @@ section#about-2 .container {
 	}
 
 	.introduceMoto {
-		font-size: 1.3vw;
+		/*font-size: 1.3vw;*/
 	}
 }
 
@@ -1522,13 +1544,13 @@ section#about-2 .container {
 	background-color: #31bbb1;
 	width: 100%;
 	text-align: center;
-	padding-top: 37px;
+	padding-top: 47px;
  }
 
 .introduceMoto {
 	height: 29px;
-	font-family: NanumGothicOTF;
-	font-size: 1.2vw;
+  	font-family: NanumSquareLight;
+	font-size: 20px;
 	font-weight: normal;
 	font-style: normal;
 	font-stretch: normal;
@@ -1540,8 +1562,7 @@ section#about-2 .container {
 
 .introduceDivideImage {
 	display: block;
-
-	margin:2px auto 16px ;
+	margin: 10px auto 9px ;
 }
 
 .acitvityContainerTitle {
@@ -1557,9 +1578,9 @@ section#about-2 .container {
 }
 .introduceSubtitle {
 	height: 55px;
-	font-family: NanumGothicOTF;
-	font-size: 2.5vw;
-	font-weight: bold;
+	/*font-size: 2.5vw;*/
+	font-family: NanumSquareRegular;
+	font-size: 50px;
 	font-style: normal;
 	font-stretch: normal;
 	line-height: normal;
@@ -1573,12 +1594,10 @@ section#about-2 .container {
 }
 
 .introduceDesc {
-	margin-top: 9px;
+	margin-top: 20px;
 	height: 58px;
-	font-family: NanumGothicOTF;
-	font-size: 1.2vw;
-	font-weight: normal;
-	font-style: normal;
+	font-size: 20px;
+  	font-family: NanumSquareLight;
 	font-stretch: normal;
 	line-height: 1.45;
 	letter-spacing: normal;
