@@ -1366,8 +1366,14 @@ section#about-2 .container {
 }
 @media only screen and (max-width: 768px) {
 
-	.recruitContentData {
-      width: 100% !important;
+.recruitContentData {
+     width: 100% !important;
+  }
+
+  .applyButton {
+  	font-size: 18px !important;
+  	padding-top: 10px;
+  	left: 70% !important;
   }
 }
 
@@ -1553,6 +1559,8 @@ section#about-2 .container {
 		margin-bottom: 20px !important;
 	}
 }
+
+
 @media only screen and (max-width: 400px) {
 	/*.navbar-toggle {
 	    position: fixed;
@@ -1589,6 +1597,11 @@ section#about-2 .container {
 	/*.header {
 		height: 140px;
 	}*/
+
+	.applyButton {
+	  	left: 65% !important;
+	  }
+
 	.connectActivityContentTitle {
 		font-size: 2.5vw !important;
 	}
