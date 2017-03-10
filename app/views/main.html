@@ -1,3 +1,4 @@
+         
          <div id="carousel-example-generic" class="carousel slide img-responsive" data-ride="carousel">
           <!-- Wrapper for slides -->
           <div class="carousel-inner" role="listbox">
@@ -45,9 +46,9 @@
     <!-- Services -->
     <section id="activities" class="section-page">
       <div class="container">
-        <h3 class="text-center connectSchoolPartner">커넥트스쿨 파트너 대학교</h3>
-        <img src= ""/>
-        <div class="connectSchoolPartnerDesc">
+        <h3 class="text-center connectSchoolPartner fontTwentyEight">커넥트스쿨 파트너 대학교</h3>
+        <img src= "images/dividerPattern.png"/ class="partnerDividerImg">
+        <div class="connectSchoolPartnerDesc fontTwenty">
           커넥트스쿨은 아래 대학교들과 함께합니다.
         </div>
         <img class="connectSchoolPartnerImage" src="images/connnectSchoolPartner.png"/>
@@ -55,7 +56,7 @@
     </section>
 
     <section id="education" class="section-page">
-        <div class="customBanner activity">
+        <div class="customBanner activity activityTitle">
           <div class="introduceSubtitle">
             대학교 봉사단 
           </div>   
@@ -67,7 +68,7 @@
         <div class="container activityContainer">
           <div class="activityContainerWrapper">
 
-              <h3 class="text-center acitvityContainerTitle">커넥트스쿨 연혁</h3>
+              <h3 class="text-center acitvityContainerTitle fontTwentyEight">커넥트스쿨 연혁</h3>
               <img src="images/activityContainer.png" class="introduceDivideImage"/>
 
              <div>
@@ -143,9 +144,9 @@
           <ul id="og-grid" class="og-grid">
             <li ng-repeat="activity in activities">
                 <p class="connectActivityContent" ng-repeat="(key ,value) in activity" ng-class="{ title : key == '제목'}">
-                  <span class="connectActivityContentTitle " ng-hide="key == '제목'">{{ key }} </span> 
+                  <span class="connectActivityContentTitle " ng-if="key != '제목'" ng-class="{ typeContent : key != '제목'}" >{{ key }} </span> 
                   </br>
-                  <span class="contetnActivityDesc" ng-bind-html="value"> </span>
+                  <span class="contentActivityDesc" ng-bind-html="value" ng-class="{ typeBold : key=='제목' , typeThin : key != '제목'}"> </span>
                 </p>
             </li>
           </ul>
@@ -169,10 +170,13 @@
 
       <div class="container">
          <div class="recruitContentDesc">
-         <p class="connectActivityContent recruitContent" ng-repeat="(key ,value) in recruit" ng-class="{ title : key == '제목'}">
-            <span class="connectActivityContentTitle" ng-bind-html="key"></span> 
-            <span class="contetnActivityDesc" ng-bind-html="value"> </span>
-          </p>
+          <div class="recruitContentData">
+             <p class="connectActivityContent recruitContent" ng-repeat="(key ,value) in recruit" ng-class="{ title : key == '제목'}">
+                <span class="connectActivityContentTitle fontTwentyRegular" ng-bind-html="key"></span> 
+                <span class="contetnActivityDesc" ng-bind-html="value"> </span>
+              </p>
+            </div>
+        </div>
       </div>
     </section>
   
