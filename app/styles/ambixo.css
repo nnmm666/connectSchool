@@ -112,6 +112,9 @@ header {
     z-index: 1000;
 }
 
+#header {
+	position: fixed;
+}
 #header .navbar {
 	border-radius: 0 ;
 }
@@ -133,6 +136,7 @@ svg {
     padding-top: 50px;
     margin-top: -30px;
 	transition: all 0.3s;
+	padding-bottom: 10px;
 
 }
 
@@ -141,6 +145,7 @@ svg {
 	width: 151px;
 	height: 41px;
 	display: inline-block;
+	margin-left: 50px;
 }
  
 .header.animated-header {
@@ -216,7 +221,8 @@ svg {
 
 #main-nav {
 	float: right;
-	max-width: 300px;
+	max-width: 450px;
+	margin-right: 50px;
 }
 #main-nav li a {
 	font-size: 1.6em;
@@ -426,6 +432,17 @@ section#about-2 .container {
 		margin-top: 0px;
 	}
 
+	.mainBannerText {
+		font-size: 3vw;
+	}
+/*
+	.logoImage {
+		margin-left: 20px !important;
+	}
+
+	#main-nav {
+		margin-right: 0px !important;
+	}*/
 }
 
 @media only screen and (max-width: 768px) {
@@ -437,6 +454,20 @@ section#about-2 .container {
 	.main-img {
 		margin-top: 0px;
 	}
+
+	.logoImage {
+		margin-left: 0px !important;
+		background-size: 130px !important;
+	}	 
+
+	#main-nav {
+		float: right !important;
+		margin-right: 0px;
+	}
+	
+	.mainBannerText {
+		top: 50% !important;
+	}	
 }
 
 @media only screen and (max-width: 640px) {
@@ -1365,6 +1396,10 @@ section#about-2 .container {
 	    left: 50%;
 	    top: 100px;
 	}*/
+
+	.mainBannerText {
+		top: 62% !important;
+	}
 }
 
 .contetnActivityDesc {

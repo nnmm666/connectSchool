@@ -9,6 +9,28 @@ body {
   padding: 0;
 }
 
+.mainBannerText {
+  width: 1224px;
+  height: 210px;
+  font-family: NanumSquare;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.44;
+  letter-spacing: normal;
+  color: #ffffff;
+  position: absolute;
+  z-index: 999;
+  top: 40%;
+  width: 100%;
+  font-size: 4vw;
+  text-align: center;
+}
+
+.mainBannerText > span {
+  font-weight: bold;
+}
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
