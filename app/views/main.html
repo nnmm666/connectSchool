@@ -199,7 +199,7 @@
 
         <div class="container">
             <div class="faqWrapper">
-              <div class = "faqMenus introduceDesc" ng-repeat="(key, value) in menus" ng-click="showData(key)" ng-class="{ current : currentTab === key}">
+              <div class = "faqMenus" ng-repeat="(key, value) in menus" ng-click="showData(key)" ng-class="{ current : currentTab === key}">
                  {{ getText(key) }}
               </div>
               <hr>
