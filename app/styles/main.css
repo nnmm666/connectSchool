@@ -10,6 +10,14 @@ body {
   /*font-family: NanumSquareRegular !important;*/
 }
 
+.footerContainer{
+  height: 122px;  
+}
+
+#contact-footer .container {
+  padding: 40px;
+}
+
 .mainBannerText {
   width: 1224px;
   height: 210px;
@@ -127,7 +135,7 @@ body {
 .activity {
   width: 100%;
   height: 300px;
-  background : url('../images/activity.png');
+  background: url('../images/activity.png') no-repeat;
   padding-top: 89px;
 }
 
@@ -160,7 +168,7 @@ body {
 .activity_1 {
   width: 100%;
   height: 300px;
-  background : url('../images/activity.png');
+  background : url('../images/connectActivity.png');
   padding-top: 89px;
   margin-bottom: 50px;
 }
@@ -274,6 +282,7 @@ body {
 }
 .footerLogo_2 {
   margin-left: 20px;
+  margin-top: -4px;
 }
 
 .footerLogo {
@@ -286,9 +295,13 @@ body {
   font-family: NanumSquareLight;
   color: #2d2d2d;
   text-align: left;
+  margin-left: 90px;
   /*margin-left: 70px;*/
 }
 
+.dropdown-menu{
+  box-shadow: none !important;
+}
 .footerCenterDesc span {
   margin-left: 112px; 
   display: block;
@@ -329,6 +342,16 @@ body {
   /*width: 270px;*/
   border:1px solid #c2c2c2;
   border-radius: 0px !important;
+  padding: 0px !important;
+
+}
+.dropdown-menu li a {
+  line-height: 36px;
+}
+
+.dropdown-menu li a:hover {
+  font-weight: bold !important;
+  background-color: transparent !important;
 }
 
 .dropup{
@@ -345,6 +368,7 @@ body {
 
 .dropup .dropdown-menu {
   width: 270px;
+  margin-bottom: -1px !important;
 }
 
 .dropup > .dropdown-menu li {
