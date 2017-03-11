@@ -14,6 +14,7 @@ angular.module('testApp')
     //   'AngularJS',
     //   'Karma'
     // ];
+    $scope.toggleSize = true;
     $scope.recruit = {
     	'<div>지원자격</div>' : "<div>· <span> 커넥트스쿨 제휴 대학에 재학중 또는 휴학중인 학생</span> <br>· 학부 2학년 이상 (전공 무관, 휴학생 가능), 남녀 모두 지원 가능<br>· 기획부터 운영까지 SW교육의 모든 것을 경험하고 싶은 분<br>· 1년간 성실하게 온/오프라인 사전교육과 프로그램에 참여 가능한 분<br>· 평소 소프트웨어 교육에 대한 관심이 깊은 분</div>",
     	'<div>우대조건</div>' : "<div>· 사회배려대상자 (관련 증빙자료 제출) <br>· 경찰, 소방관, 군부사관 자녀 및 국가 유공자 자녀 <br>· 엔트리, 스크래치를 활용한 소프트웨어 교육 경험자 </div>",
@@ -138,6 +139,10 @@ angular.module('testApp')
 
     $scope.applyConnectSchool = function() {
     	
+    }
+
+    $scope.clickToggle = function(){
+        $scope.toggleSize = !$scope.toggle;
     }
   });
  

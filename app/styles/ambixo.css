@@ -486,6 +486,7 @@ section#about-2 .container {
 #main-img {
 	margin-top: -100px;
 } 
+
 @media only screen and (max-width: 1024px) {
 	.parallax {
 		background-attachment: scroll;
@@ -522,6 +523,33 @@ section#about-2 .container {
 	    background-repeat: no-repeat;
         height: 120vw !important
 	}
+
+	.footerWrapper ul{
+		width: 100% !important;
+		margin-bottom: 30px;
+/*		float: none;
+*/	}
+
+	.dropup .dropdown-menu {
+		width: 270px !important;
+	}
+
+	.dropupWrapper {
+		/*width: 270px !important;*/
+		/*margin: auto;*/
+	}
+
+	.dropupWrapper ul {
+		/*margin: auto;*/
+	}
+
+	.footerWrapperWrapper {
+		float: none !important;
+		width: 300px;
+	    display: block;
+	    margin: 0 auto !important;
+	}
+
 }
 @media only screen and (max-device-width: 540px) {
 
@@ -1576,7 +1604,7 @@ section#about-2 .container {
 		display: block;
 	}
 
-	
+
 	.connectActivityContent span div {
 		margin-left : 0px !important;
 		display: block;

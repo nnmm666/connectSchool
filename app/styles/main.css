@@ -254,6 +254,10 @@ body {
   background-color: transparent;
 }
 
+.footerWrapper{
+  text-align: center;  
+}
+
 .tmlabel > p{
   font-size: 16px;
   font-family: NanumSquareOTFR;
@@ -263,4 +267,92 @@ body {
   font-stretch: normal;
   line-height: 22px;
   letter-spacing: normal;
+}
+.footerLogo {
+  display: inline-block;
+  vertical-align: top;
+}
+.footerLogo_2 {
+  margin-left: 20px;
+}
+
+.footerLogo {
+  margin-bottom: 10px;  
+  /*margin-right: 20px;*/
+}
+
+.footerCenterDesc {
+  font-size: 14px;
+  font-family: NanumSquareLight;
+  color: #2d2d2d;
+  text-align: left;
+  /*margin-left: 70px;*/
+}
+
+.footerCenterDesc span {
+  margin-left: 112px; 
+  display: block;
+}
+
+.footerCenterDesc span {
+    font-family: NanumSquareRegular;
+    color: #3b3b3b;
+}
+
+.relatedSizeMenu {
+  width: 270px;
+  height: 40px;
+  border: 1px solid #c2c2c2;
+  background-color: white;
+  padding:9px 9px 9px 20px;
+  text-align: left;
+  cursor: pointer;
+  /*margin: auto;*/
+}
+
+.positionCenterClass {
+  text-align: center;
+}
+.relatedSizeIcon {
+  float: right;
+}
+
+.relatedSizeMenu {
+  display: block;
+  width: 270px;
+  height: 40px;
+  background-color: white !important;
+  border-radius : 0px !important;
+}
+
+.dropup > .dropdown-menu {
+  /*width: 270px;*/
+  border:1px solid #c2c2c2;
+  border-radius: 0px !important;
+}
+
+.dropup{
+  padding-left: 0px !important;
+}
+
+.footerWrapperWrapper {
+    float: right;
+}
+
+.footerWrapperWrapper .dropdown-menu>li>a {
+  text-align: left;
+}
+
+.dropup .dropdown-menu {
+  width: 270px;
+}
+
+.dropup > .dropdown-menu li {
+  height: 36px;
+  line-height: 36px;
+}
+
+.footerlogos {
+  float: left;
+  text-align: left;
 }
