@@ -158,6 +158,12 @@ body {
 .recruitContent {
   margin-bottom: 45px !important;
 }
+
+.glyphicon {
+   font-family:'Glyphicons Halflings' !important;
+   // more css comes along here
+}
+
 @media only screen and (max-width: 600px) {
 
   .recruitContent {
@@ -180,6 +186,10 @@ body {
   padding-top: 89px;
   background-color: white;
 
+}
+
+#faq > .container {
+    min-height: 800px;
 }
 
 .faqMenus {

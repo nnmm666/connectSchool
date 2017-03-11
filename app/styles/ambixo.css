@@ -155,7 +155,7 @@ input {
 	margin-left: 0.5em;
 }
 
-#activities { 
+#activities , #playing { 
     height: 100%;
     background: url(../images/activity_bg_1.png);
     background-color: white;
@@ -1669,6 +1669,10 @@ section#about-2 .container {
 	    left: 50%;
 	    top: 100px;
 	}*/
+
+	.og-grid li{
+		height: 560px !important;
+	}
 
 	.contentActivityDesc.typeBold {
 		font-size: 15px !important;
