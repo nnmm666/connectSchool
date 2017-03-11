@@ -136,6 +136,8 @@ angular.module('testApp')
     	return $scope[$scope.currentTab];
     }
 
+    $scope.applyConnectSchool = function() {
 
+    }
   });
  

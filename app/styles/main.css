@@ -35,6 +35,21 @@ body {
   font-family: NanumSquareBold;
 }
 
+.applyButton {
+  position: relative;
+  top: -120px;
+  left: 470px;
+  width: 124px;
+  height: 124px;
+  border-radius: 50%;
+  background-color: #44c0b4;
+  text-align: center;
+  line-height: 6;
+  color: white;
+  cursor: pointer;
+}
+
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
