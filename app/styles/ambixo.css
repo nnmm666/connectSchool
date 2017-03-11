@@ -123,8 +123,10 @@ input {
 	margin: 10px auto 0px;
 	max-width: 90%;
 }
-.connectSchoolPartner {
+.acitvityContainerTitle {
 	color: #31bbb1;
+	font-family: NanumSquareRegular;
+	font-size: 28px;
 }
 
 .connectSchoolPartnerDesc {
@@ -155,11 +157,11 @@ input {
 
 #activities { 
     height: 100%;
-    background: url(../images/includeAc_bg.png);
+    background: url(../images/activity_bg_1.png);
     background-color: white;
     background-repeat-y: no-repeat;
     background-position-y: bottom;
-    background-size: 100% 990px;
+    background-size: 1920px 990px;
 }
 
 header span,
@@ -497,6 +499,11 @@ section#about-2 .container {
 	.mainBannerText {
 		font-size: 3vw;
 	}
+
+	.contentActivityDesc.typeBold {
+		font-size: 2.1vw;	
+	}
+
 /*
 	.logoImage {
 		margin-left: 20px !important;
@@ -510,14 +517,15 @@ section#about-2 .container {
 @media only screen and (max-width: 1016px) {
 	.connectSchoolSchedule {
 		background: url(../images/plan_h.png) no-repeat !important;
-	    background-position: center !important;
-	    background-size: 498px 672px !important;
+	    background-position: center top!important;
+	    background-size: 80% !important;
 	    background-repeat: no-repeat;
-	    height: 672px;
-	    height: 672px !important;
+        height: 120vw !important
 	}
 }
+@media only screen and (max-device-width: 540px) {
 
+}
 @media only screen and (max-device-width: 321px) {
     .introduceSubtitle {
 	    padding-top: 10px !important;
@@ -536,6 +544,10 @@ section#about-2 .container {
 		height: 450px;
 	}
 	
+	.faq {
+		padding-top: 50px !important;
+	}
+
 	.recruit , .customBanner{
 	    height: 200px !important;		
 	    padding-top: 50px !important;
@@ -568,6 +580,11 @@ section#about-2 .container {
 	.fontTwenty {
 		font-size: 3.5vw !important;
 	}
+	
+	.acitvityContainerTitle {
+		font-size: 3.5vw !important;
+	}
+
 
 	fontTwentyRegular {
 		font-size: 3.5vw !important;
@@ -588,6 +605,13 @@ section#about-2 .container {
 }
 
 @media only screen and (max-width: 640px) {
+	/*.connectSchoolSchedule {
+        height: 900px !important;
+	}*/
+	.contentActivityDesc.typeBold {
+		font-size: 2.7vw;
+	}
+
 	.parallax {
 		height: 250px;
 	}
@@ -724,12 +748,12 @@ section#about-2 .container {
 }
 
 .connectSchoolSchedule {
-	margin: 40px auto 76px;
-	background: url('../images/plan_1.png');
+	margin: 40px auto 0px;
+	background: url('../images/plan_1.png') no-repeat;
 	background-size: 100%;
 	max-width: 1016px;
 	width: 100%;
-	height: 263px;
+    height: 360px;
 	display: block;
 }
 .og-grid li.og-expanded > a::after {
@@ -1407,30 +1431,24 @@ section#about-2 .container {
 	    width: 1.4em;
 	}
 
-	.faqMenus {
-		height: 2.5vw !important;
-	}
-
-	.faqContentContent {
-		font-size: 2vw !important;	
-	}
-
-	.faqContentTitle {
-		font-size: 2vw !important;
-	}
-
 	.faqAnswer .faqAnswerData {
 		font-size: 2vw !important;
 	}
 
 	.connectActivityContentTitle {
-		font-size: 2vw !important;
+		font-size: 1.8vw !important;
 	}
 	.contetnActivityDesc {
 		font-size: 15px !important;
 	}
 
 }
+
+.faqWrapper hr {
+	margin: 20px 0 3px;
+    border: 1px solid #d8d8d8;
+}
+
 
 .navbar-nav {
 	text-align: center;
@@ -1546,6 +1564,14 @@ section#about-2 .container {
 }
 
 @media only screen and (max-width: 600px) {
+	.faqMenus {
+		display: block !important;
+		height: 22px !important;
+		text-align: left !important;
+		margin-left: 0px !important;
+		border-right: none !important;
+	}
+
 	.contetnActivityDesc {
 		display: block;
 	}
@@ -1564,6 +1590,14 @@ section#about-2 .container {
 	}
 }
 
+.faq.container {
+    min-height: 1000px;
+    overflow: scroll;
+}
+.partnerDividerImg {
+    display: block;
+    margin: 0 auto 9px;
+}
 
 @media only screen and (max-width: 400px) {
 	/*.navbar-toggle {
@@ -1572,11 +1606,30 @@ section#about-2 .container {
 	    top: 100px;
 	}*/
 
+	.contentActivityDesc.typeBold {
+		font-size: 15px !important;
+	}
 
+	.connectActivityContentTitle.typeContent {
+		font-size: 14px !important;
+	}
+
+	.connectSchoolSchedule {
+		height: 500px !important;
+	}
+
+	.introduceTitle > .introduceDivideImage {
+		margin: 0 auto !important;
+	}
+
+	.introduceTitle {
+		padding-top: 30px !important;
+	}
 	.introduceDesc {
 	    display: block;
-	    width: 310px;
+		width: none !important;	
 	    margin: 0 auto;
+	    font-size: 13px;
 	}
 
 	.mainBannerText {
@@ -1588,6 +1641,10 @@ section#about-2 .container {
 		font-family: nanumSquareLight;
 		font-size: 14px;
 		padding-left: 10px !important;
+	}
+
+	.acitvityContainerTitle{
+		font-size: 4.5vw !important;
 	}
 }
 
@@ -1601,24 +1658,20 @@ section#about-2 .container {
 	/*.header {
 		height: 140px;
 	}*/
+	.connectSchoolSchedule {
+		margin-top : 0px !important;
+	}
 
+
+	.introduceDivideImage {
+		margin: 10px auto 15px;
+	}
 	.applyButton {
 	  	left: 65% !important;
 	  }
 
 	.connectActivityContentTitle {
 		font-size: 2.5vw !important;
-	}
-	/*.contetnActivityDesc {
-		font-size: 2.5vw !important;
-	}*/
-
-	.faqContentContent {
-		font-size: 2vw !important;	
-	}
-
-	.faqContentTitle {
-		font-size: 2vw !important;
 	}
 
 	.navbar {
@@ -1766,7 +1819,8 @@ section#about-2 .container {
 }
 
 .faqContents {
-	font-size: 1vw;
+	font-size: 14px;
+	font-family: NanumSquareLight;
 }
 
 .introduceDesc {

@@ -46,7 +46,7 @@
     <!-- Services -->
     <section id="activities" class="section-page">
       <div class="container">
-        <h3 class="text-center connectSchoolPartner fontTwentyEight">커넥트스쿨 파트너 대학교</h3>
+        <h3 class="text-center connectSchoolPartner acitvityContainerTitle ">커넥트스쿨 파트너 대학교</h3>
         <img src= "images/dividerPattern.png"/ class="partnerDividerImg">
         <div class="connectSchoolPartnerDesc fontTwenty">
           커넥트스쿨은 아래 대학교들과 함께합니다.
@@ -68,7 +68,7 @@
         <div class="container activityContainer">
           <div class="activityContainerWrapper">
 
-              <h3 class="text-center acitvityContainerTitle fontTwentyEight">커넥트스쿨 연혁</h3>
+              <h3 class="text-center  acitvityContainerTitle">커넥트스쿨 연혁</h3>
               <img src="images/activityContainer.png" class="introduceDivideImage"/>
 
              <div>
@@ -202,6 +202,7 @@
               <div class = "faqMenus introduceDesc" ng-repeat="(key, value) in menus" ng-click="showData(key)" ng-class="{ current : currentTab === key}">
                  {{ getText(key) }}
               </div>
+              <hr>
                <div class="faqContents" ng-repeat="(title , content) in getContent()">
                     <div class="faqContentTitle">
                         <span class="faqLogo"> 

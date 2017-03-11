@@ -1623,7 +1623,7 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap requires jQuery'
 
   ScrollSpy.prototype.activate = function (target) {
     this.activeTarget = target
-
+    
     $(this.selector)
       .parentsUntil(this.options.target, '.active')
       .removeClass('active')
