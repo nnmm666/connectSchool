@@ -1558,6 +1558,10 @@ section#about-2 .container {
 	.recruitContent {
 		margin-bottom: 20px !important;
 	}
+
+	.recruitContentDesc {
+		padding-left: 40px !important;
+	}
 }
 
 

@@ -38,7 +38,7 @@ body {
 .applyButton {
   position: relative;
   top: -120px;
-  left: 470px;
+  left: 530px;
   width: 124px;
   height: 124px;
   border-radius: 50%;
@@ -144,7 +144,7 @@ body {
   margin: 0 auto;
   background-position: center;
   color: black;
-  padding: 115px 0 0 57px;  
+  padding: 115px 0 0 0px;  
 }
 
 .recruitContent {
