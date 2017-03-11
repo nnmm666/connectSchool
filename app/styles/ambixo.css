@@ -504,6 +504,9 @@ section#about-2 .container {
 		margin-bottom: 30px;
 /*		float: none;
 */	}
+	.footerCenterDesc span {
+		margin: 0px !important;
+	}
 	
 	.footerContainer {
 		height: 300px !important;
@@ -752,7 +755,7 @@ section#about-2 .container {
 	display: inline-block;
 	margin: 10px 5px 0 5px;
 	vertical-align: top;
-	height: 586px;
+	height: 500px;
 	max-width: 498px;
 	background-color: #f7f3fa;
 	color: black;
