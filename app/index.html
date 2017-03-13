@@ -1,0 +1,148 @@
+<!doctype html >
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AMBIXO - HTML5 Parallax One Page Portfolio Responsive Template</title>
+    <!-- <link href="rs-plugin/css/settings.css" rel="stylesheet" /> -->
+    <link href="./styles/bootstrap.min.css" rel="stylesheet">
+    <link href="./styles/ambixo.css" rel="stylesheet">
+    <link href="./styles/font/NanumSquareBold.ttf" rel="stylesheet">
+    <link href="./styles/font/NanumSquareRegular.ttf" rel="stylesheet">
+    <link href="./styles/font/NanumSquareLight.ttf" rel="stylesheet">
+
+    <!-- Script -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <!-- endbower -->
+    <!-- endbuild --><!-- 
+    <link href="//cdn.jsdelivr.net/nanumsquare/1.0/nanumsquare.css" rel="stylesheet" type="text/css"> -->
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <!-- <script src="./include/services/jquery.easypiechart.min.js"></script> -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.js"></script>
+
+    <!-- <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+    <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+ -->
+
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>   
+    <script src="./include/bootstrap.js"></script>
+
+    <script src="./include/parallax/jquery.parallax-1.1.3.js"></script>
+    <script src="./include/parallax/jquery.localscroll-1.2.7-min.js"></script>
+    <script src="./include/parallax/jquery.scrollTo-min.js"></script>
+
+
+
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/about.js"></script>
+
+    <!-- Favicons -->    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="images/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-144x144.png"> 
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/apple-touch-icon-152x152.png">
+
+    <!-- SEO Meta Tags -->
+    <!-- <meta name="description" content="" /> -->
+    <!-- <meta name="keywords" content="" /> -->
+
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Signika:300' rel='stylesheet' type='text/css'>
+
+    <!-- Font Awesome -->
+    <!-- <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->
+
+     <!-- added  here !!!!-->
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="testApp">
+     <header>
+     <div class="sticky-padding" style=""></div>
+      <div id="header" class="header">
+        <div class="container">
+          <!-- <div class="headerWrapper"> -->
+            <div class="logoImage">
+            </div>
+            <nav id="main-nav">
+              <div class="navbar navbar-default" role="navigation">
+                <div class="container">
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                  </div>
+                  <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                      <li><a href="#introduce">소개</a></li>
+                      <li><a href="#playing">활동</a></li>
+                      <li><a href="#recruit">모집</a></li>
+                      <li><a href="#faq">FAQ</a></li>
+                    <!--   <li><a href="#education">Education</a></li>
+                      <li><a href="#contact">Contact</a></li>  -->  
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </nav>
+        </div>
+      <!-- </div> -->
+        <!-- <a href="#about" class="sr-only">Skip to main content</a> -->
+      </div>
+      <!-- <svg class="decor" height="100" preserv<!-- easpectratio="none" version="1.1" viewbox="0 0 100 100" width="100%" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 100 L100 0 L0 0" stroke-width="0"></path> -->
+      <!-- </svg>  -->
+    </header>
+
+
+    <!-- <div class="container"> -->
+    <div ng-view=""></div>
+    <!-- </div> -->
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    
+
+    <script src="./include/ambixo.js"></script>
+    <script src="./include/portfolio/grid.js"></script>
+
+
+    <!-- endbuild -->
+
+</body>
+</html>
