@@ -210,6 +210,7 @@ body {
   display: inline-block;
   vertical-align: top;
   margin-right: 10px;
+  font-weight: bold;
 }
 
 .faqAnswerData {
@@ -219,6 +220,7 @@ body {
 .faqLogo {
   color: #31bbb1;
   margin-right: 10px;
+  font-weight: bold;
 }
 
 .contetnActivityDesc{
