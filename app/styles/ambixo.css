@@ -75,7 +75,7 @@ input {
 }
 
 .contentActivityDesc.typeThin {
-	font-family: NanumSquareLight;
+	font-family: NanumSquareRegular;
 	font-size: 14px;	
 }
 
@@ -236,7 +236,8 @@ svg {
 }
 
 .animated-header #main-nav li a {
-	color: #3b3b3b	
+	color: #3b3b3b;
+	font-family: NanumSquareRegular; 	
 }
 
 .animated-header #main-nav li a:hover {
@@ -1515,6 +1516,7 @@ section#about-2 .container {
 
 .navbar-nav {
 	text-align: center;
+	font-family: NanumSquareRegular;
 }
 
 
@@ -1888,7 +1890,7 @@ section#about-2 .container {
 
 .faqContents {
 	font-size: 14px;
-	font-family: NanumSquareLight;
+	font-family: NanumSquareRegular;
 }
 
 .introduceDesc {
