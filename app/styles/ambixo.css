@@ -11,21 +11,25 @@
     font-family:NanumSquareLight;
     font-style: normal;
     font-weight: 400;
-    src: url('font/NanumSquareLight.ttf') format('woff');
+    src: url('font/NanumSquareLight.ttf') format('truetype');
 }
 
 @font-face{
     font-family:NanumSquareRegular;
     font-style: normal;
     font-weight: 600;
-    src: url('font/NanumSquareRegular.ttf') format('woff');
+    src: url('font/NanumSquareRegular.woff') format('woff'),
+    	 url('font/NanumSquareRegular.woff2') format('woff2'), 
+    	 url('font/NanumSquareRegular.ttf') format('truetype');
 }
 
 @font-face{
     font-family:NanumSquareBold;
     font-style: normal;
     font-weight: 800;
-    src: url('font/NanumSquareBold.ttf') format('woff');
+    src: url('font/NanumSquareBold.woff') format('woff'),
+    	 url('font/NanumSquareBold.woff2') format('woff2'), 
+    	 url('font/NanumSquareBold.ttf') format('truetype');
 }
 
 @charset "UTF-8";
