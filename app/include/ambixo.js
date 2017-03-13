@@ -116,7 +116,7 @@ $('html, body').animate({ scrollTop: 0 });
     var a = $('.header').height();
     // tempDom = id;
     if($('.sticky-padding'))
-      $('.sticky-padding').css('padding-top', (a -10 + 'px'));      
+      $('.sticky-padding').css('padding-top', ((a - (a/3.6) ) + 'px'));      
   }); 
 
   
