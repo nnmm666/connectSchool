@@ -834,6 +834,9 @@ section#about-2 .container {
 	margin: -20px 0 0 -15px;
 }
 
+.contetnActivityDesc{
+	font-family: NanumSquareRegular;
+}
 .og-expander {
 	position: absolute;
 	background: #fdfbfc;
@@ -1708,7 +1711,7 @@ section#about-2 .container {
 
 	.recruitContentDesc {
 		/*width: 200px;*/
-		font-family: nanumSquareLight;
+		font-family: NanumSquareRegular;
 		font-size: 14px;
 		padding-left: 10px !important;
 	}
@@ -1720,7 +1723,11 @@ section#about-2 .container {
 
 .contetnActivityDesc {
 	min-width: 300px;
-	font-family: nanumSquareLight;
+}
+
+.contetnActivityDesc > div > span {
+	font-family: NanumSquareBold;
+	text-decoration: underline;
 }
 
 @media only screen and (max-width: 640px) {
