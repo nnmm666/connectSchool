@@ -6,31 +6,8 @@
   License: GNU GENERAL PUBLIC LICENSE
   
 -------------------------------------------------------------------------*/
+@import url(//cdn.jsdelivr.net/nanumsquare/1.0/nanumsquare.css);
 
-@font-face{
-    font-family:NanumSquareLight;
-    font-style: normal;
-    font-weight: 400;
-    src: url('font/NanumSquareLight.ttf') format('truetype');
-}
-
-@font-face{
-    font-family:NanumSquareRegular;
-    font-style: normal;
-    font-weight: 600;
-    src: url('font/NanumSquareRegular.woff') format('woff'),
-    	 url('font/NanumSquareRegular.woff2') format('woff2'), 
-    	 url('font/NanumSquareRegular.ttf') format('truetype');
-}
-
-@font-face{
-    font-family:NanumSquareBold;
-    font-style: normal;
-    font-weight: 800;
-    src: url('font/NanumSquareBold.woff') format('woff'),
-    	 url('font/NanumSquareBold.woff2') format('woff2'), 
-    	 url('font/NanumSquareBold.ttf') format('truetype');
-}
 
 @charset "UTF-8";
 
@@ -73,18 +50,21 @@ input {
 }
 
 .contentActivityDesc.typeBold {
-	font-family: NanumSquareBold;
+	font-family: 'NanumSquare';
+	font-weight: 600;
 	font-size: 20px;
 	margin-top:-20px;
 }
 
 .contentActivityDesc.typeThin {
-	font-family: NanumSquareRegular;
+	font-family: 'NanumSquare';
+	font-weight: 400;
 	font-size: 14px;	
 }
 
 .connectActivityContentTitle.typeContent {
-	font-family: NanumSquareRegular;
+	font-family: 'NanumSquare';
+	font-weight: 400;
 	font-size: 16px;		
 }
 
@@ -93,17 +73,20 @@ input {
 }
 
 .fontTwentyRegular {
-	font-family: NanumSquareRegular;
+	font-family: 'NanumSquare';
+	font-weight: 400;
 	font-size: 20px;
 }
 
 .fontTwenty {
-	font-family: NanumSquareLight;
+	font-family: 'NanumSquare';
+	font-weight: 200;
 	font-size: 20px;
 }
 
 .fontTwentyEight {
-	font-family: NanumSquareRegular;
+	font-family: 'NanumSquare';
+	font-weight: 400;
 	font-size: 28px;
 }
 
@@ -129,7 +112,8 @@ input {
 }
 .acitvityContainerTitle {
 	color: #31bbb1;
-	font-family: NanumSquareRegular;
+	font-family: 'NanumSquare';
+	font-weight: 400;
 	font-size: 28px;
 }
 
@@ -241,7 +225,8 @@ svg {
 
 .animated-header #main-nav li a {
 	color: #3b3b3b;
-	font-family: NanumSquareRegular; 	
+	font-family: 'NanumSquare';
+	font-weight: 400; 	
 }
 
 .animated-header #main-nav li a:hover {
@@ -654,7 +639,7 @@ section#about-2 .container {
 	}
 
 
-	fontTwentyRegular {
+	.fontTwentyRegular {
 		font-size: 3.5vw !important;
 	}
 
@@ -839,7 +824,8 @@ section#about-2 .container {
 }
 
 .contetnActivityDesc{
-	font-family: NanumSquareRegular;
+	font-family: 'NanumSquare';
+	font-weight: 400;
 }
 .og-expander {
 	position: absolute;
@@ -1523,7 +1509,8 @@ section#about-2 .container {
 
 .navbar-nav {
 	text-align: center;
-	font-family: NanumSquareRegular;
+	font-family: 'NanumSquare';
+	font-weight: 400;
 }
 
 
@@ -1715,7 +1702,8 @@ section#about-2 .container {
 
 	.recruitContentDesc {
 		/*width: 200px;*/
-		font-family: NanumSquareRegular;
+		font-family: 'NanumSquare';
+		font-weight: 400;
 		font-size: 14px;
 		padding-left: 10px !important;
 	}
@@ -1730,7 +1718,8 @@ section#about-2 .container {
 }
 
 .contetnActivityDesc > div > span {
-	font-family: NanumSquareBold;
+	font-family: 'NanumSquare';
+	font-weight: 600;
 	text-decoration: underline;
 }
 
@@ -1859,7 +1848,8 @@ section#about-2 .container {
 
 .introduceMoto {
 	height: 29px;
-  	font-family: NanumSquareLight;
+  	font-family: 'NanumSquare';
+  	font-weight: 200;
 	font-size: 20px;
 	font-weight: normal;
 	font-style: normal;
@@ -1876,7 +1866,8 @@ section#about-2 .container {
 }
 
 .acitvityContainerTitle {
-	font-family: NanumSquareOTFB;
+	font-family: 'NanumSquare';
+	font-weight: 400;
 	font-size: 28px;
 	font-weight: normal;
 	font-style: normal;
@@ -1889,7 +1880,8 @@ section#about-2 .container {
 .introduceSubtitle {
 	height: 55px;
 	/*font-size: 2.5vw;*/
-	font-family: NanumSquareRegular;
+	font-family: 'NanumSquare';
+	font-weight: 400;
 	font-size: 50px;
 	font-style: normal;
 	font-stretch: normal;
@@ -1901,14 +1893,16 @@ section#about-2 .container {
 
 .faqContents {
 	font-size: 14px;
-	font-family: NanumSquareRegular;
+	font-family: 'NanumSquare';
+	font-weight: 400;
 }
 
 .introduceDesc {
 	margin-top: 20px;
 	height: 58px;
 	font-size: 20px;
-  	font-family: NanumSquareLight;
+  	font-family: 'NanumSquare';
+  	font-weight: 200;
 	font-stretch: normal;
 	line-height: 1.45;
 	letter-spacing: normal;

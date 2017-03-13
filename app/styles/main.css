@@ -7,7 +7,7 @@
 
 body {
   padding: 0;
-  /*font-family: NanumSquareRegular !important;*/
+  /*font-family: 'NanumSquareRegular' !important;*/
 }
 
 .footerContainer{
@@ -21,8 +21,8 @@ body {
 .mainBannerText {
   width: 1224px;
   height: 210px;
-  font-family: NanumSquareLight;
-  font-weight: normal;
+  font-family: 'NanumSquare';
+  font-weight: 200;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.44;
@@ -40,7 +40,8 @@ body {
   background: url('../images/about_bg.png');
 }
 .mainBannerText > span {
-  font-family: NanumSquareBold;
+  font-family: 'NanumSquare';
+  font-weight: 600;
 }
 
 .applyButton {
@@ -201,7 +202,7 @@ body {
   color: #3b3b3b;
   min-width: 100px;
   font-size: 16px;
-  font-family: NanumSquareRegular;
+  font-family: 'NanumSquareRegular';
   text-align: center;
   cursor: pointer;
 }
@@ -280,7 +281,6 @@ body {
   font-size: 16px;
   font-family: NanumSquareOTFR;
   color: #3b3b3b;
-  font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: 22px;
@@ -302,7 +302,8 @@ body {
 
 .footerCenterDesc {
   font-size: 14px;
-  font-family: NanumSquareLight;
+  font-family: 'NanumSquare';
+  font-weight: 200;
   color: #2d2d2d;
   text-align: left;
   margin-left: 90px;
@@ -318,7 +319,7 @@ body {
 }
 
 .footerCenterDesc span {
-    font-family: NanumSquareRegular;
+    font-family: 'NanumSquareRegular';
     color: #3b3b3b;
 }
 
