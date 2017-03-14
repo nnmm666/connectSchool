@@ -110,7 +110,11 @@ angular.module('testApp')
 
     $('.img-responsive').css('width' , window.innerWidth+'px');
     $('.img-responsive').css('height' , window.innerHeight+'px');
-    $('.img-responsive').css('background-size' , window.innerWidth + 100 +'px' + '' + window.innerHeight+'px');
+    if(window.innerWidth > 768)
+        $('.img-responsive').css('background-size' , window.innerWidth + 'px' + '' + window.innerHeight+'px');
+    else {
+        $('.img-responsive').css('background-size' , 1000 + 'px' +'' + 1000+'px');
+    }
 
     window.onresize = function(event) {
         $('.img-responsive').css('width' , window.innerWidth+'px');
