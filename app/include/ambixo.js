@@ -109,10 +109,12 @@ $('html, body').animate({ scrollTop: 0 });
   $('.navbar-nav > li > a').click(function(e){
     var id =  $(this).attr('href');
     var a = $('.header').height();
+    var pad = 0;
+    pad = $(id).offset().top - (a + 30) + 'px';
 
-    $('html, body').animate({
-        scrollTop:$(id).offset().top - (a + 30)
-    }, 1000);
+    $('body, html').animate({
+        scrollTop : pad
+    }, 500);
 
     // var a = $('.header').height();
     // console.log('currentDom' , currentDom);

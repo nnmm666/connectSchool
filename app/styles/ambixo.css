@@ -17,7 +17,8 @@ html {
 }
 
 body {
-	font-family: 'Signika', sans-serif;
+	font-family: 'NanumSquare';
+	font-weight: 400;
 	font-size: 11px !important;
 	font-size: 1.4em;
 	background-color: #3e383a;
@@ -197,6 +198,7 @@ svg {
 }
 
 .logoImage {
+	cursor: pointer;
 	background: url('../images/logo.png') no-repeat;
 	width: 151px;
 	height: 41px;
@@ -1870,6 +1872,7 @@ section#about-2 .container {
 	height: 100%;
 }
 .img-responsive {
+	width: 100%;
 	background-position: top center !important;
 	max-height: 1000px !important;
 	display: block;
