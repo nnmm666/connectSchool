@@ -20,7 +20,7 @@ $(document).ready(function () {
 $('html, body').animate({ scrollTop: 0 });
 
 //STICKY HEADER -----------------------------------------------------------------/
-  var tempDom;
+  var currentDom;
   var timeout;
 
   if ($(".header")[0]){
@@ -45,11 +45,6 @@ $('html, body').animate({ scrollTop: 0 });
               $('.header.animated-header').stop(true).animate({opacity : 0.95}, 100);              
             });
           }
-          clearTimeout(timeout);  
-          timeout = setTimeout(function() {
-              $('.sticky-padding').css('padding-top', '0px'); 
-          }, 50);
-          
         }
     });
   }
@@ -112,11 +107,36 @@ $('html, body').animate({ scrollTop: 0 });
   })
 
   $('.navbar-nav > li > a').click(function(e){
-    // var id =  $(this).attr('href');
+    var id =  $(this).attr('href');
     var a = $('.header').height();
-    // tempDom = id;
-    if($('.sticky-padding'))
-      $('.sticky-padding').css('padding-top', ((a - (a/3.6) ) + 'px'));      
+
+    $('html, body').animate({
+        scrollTop:$(id).offset().top - (a + 30)
+    }, 1000);
+
+    // var a = $('.header').height();
+    // console.log('currentDom' , currentDom);
+    // console.log('current id', id);
+    // console.log(id === currentDom);
+
+    // if(id === currentDom){
+    //   $('.sticky-padding').css('padding-top', '30px'); 
+    //   return;
+    // }
+    // currentDom = id;
+
+    // $('.header').before('<div class="sticky-padding"></div>');    
+    // console.log(23232);
+    // console.log(a);
+    // console.log((a - (a/3)) );
+    // $('.sticky-padding').css('padding-top', ((a-a/3) + 'px'));    
+
+    // clearTimeout(timeout);
+    // timeout = setTimeout(function() {
+    //   console.log('paddig-top 0 ');
+    //     $('.sticky-padding').css('padding-top', '0px'); 
+    // }, 200);
+
   }); 
 
   
