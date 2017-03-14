@@ -12,40 +12,45 @@ $(document).ready(function () {
 
 //LOGO SCROLL ----------------------------------------------------------------------------/
 
-  $(".logo a").click(function(){
-    $('html, body').animate({ scrollTop: 0 }, 800);
+  $(".logoImage").click(function(){
+    $('html, body').animate({ scrollTop: 0 }, 500);
   });
 
 
+$('html, body').animate({ scrollTop: 0 });
+
 //STICKY HEADER -----------------------------------------------------------------/
+  var tempDom;
+  var timeout;
 
   if ($(".header")[0]){
     $('.header').before('<div class="sticky-padding"></div>');
+    
     $(window).scroll(function(){
       var wind_scr = $(window).scrollTop();
-      var window_width = $(window).width();
       var head_w = $('.header').height();
-      if (window_width >= 10) {
-        if(wind_scr < 400){
+        if(wind_scr <= 5){
           if($('.header').data('animated-header') === true){
             $('.header').data('animated-header', false);
-            $('.header').stop(true).animate({opacity : 1}, 300, function(){
+            $('.header').stop(true).animate({opacity : 1}, 0, function(){
               $('.header').removeClass('animated-header');
-              $('.header').stop(true).animate({opacity : 1}, 300);
-              $('.sticky-padding').css('padding-top', '');
+              $('.header').stop(true).animate({opacity : 1}, 0);
             });
           }
         } else {
           if($('.header').data('animated-header') === false || typeof $('.header').data('animated-header') === 'undefined'){
             $('.header').data('animated-header', true);
-            $('.header').stop(true).animate({opacity : 1},300,function(){
-              $('.header').addClass('animated-header');
-              $('.header.animated-header').stop(true).animate({opacity : 0.95}, 300);
-              $('.sticky-padding').css('padding-top', 104 + 'px');
+            $('.header').stop(true).animate({opacity : 1},0,function(){
+              $('.header').addClass('animated-header'); 
+              $('.header.animated-header').stop(true).animate({opacity : 0.95}, 100);              
             });
           }
+          clearTimeout(timeout);  
+          timeout = setTimeout(function() {
+              $('.sticky-padding').css('padding-top', '0px'); 
+          }, 50);
+          
         }
-      }
     });
   }
 
@@ -105,6 +110,14 @@ $(document).ready(function () {
       jQuery('html, body').animate({scrollTop: 0}, duration);
       return false;
   })
+
+  $('.navbar-nav > li > a').click(function(e){
+    // var id =  $(this).attr('href');
+    var a = $('.header').height();
+    // tempDom = id;
+    if($('.sticky-padding'))
+      $('.sticky-padding').css('padding-top', ((a - (a/3.6) ) + 'px'));      
+  }); 
 
   
 });
