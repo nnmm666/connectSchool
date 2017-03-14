@@ -108,7 +108,7 @@ angular.module('testApp')
     	activity: false
     }
 
-    $('.img-responsive').css('width' , window.innerWidth+'px');
+    $('.img-responsive').css('width' , 100+'%');
     $('.img-responsive').css('height' , window.innerHeight+'px');
     if(window.innerWidth > 768)
         $('.img-responsive').css('background-size' , window.innerWidth + 'px' + '' + window.innerHeight+'px');
