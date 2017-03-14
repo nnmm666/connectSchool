@@ -630,7 +630,7 @@ section#about-2 .container {
 	}
 	
 	.mainBannerText {
-		top: 50% !important;
+		top: 45% !important;
 		font-size: 6vw !important;
 	}	
 
@@ -1736,6 +1736,9 @@ section#about-2 .container {
 		margin-top : 0px !important;
 	}
 
+	.mainBannerText {
+		top: 40% !important;
+	}
 
 	.introduceDivideImage {
 		margin: 10px auto 15px;
