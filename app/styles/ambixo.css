@@ -49,12 +49,16 @@ textarea,
 input {
     outline: 0;
 }
+.contentActivityDesc {
+	display: inline-block;
+	vertical-align: top;
+}
 
 .contentActivityDesc.typeBold {
 	font-family: 'NanumSquare';
 	font-weight: 600;
 	font-size: 20px;
-	margin-top:-20px;
+	margin-top: 51px;
 }
 
 .contentActivityDesc.typeThin {
@@ -67,6 +71,8 @@ input {
 	font-family: 'NanumSquare';
 	font-weight: 400;
 	font-size: 16px;		
+	width: 64px;
+	display: inline-block;
 }
 
 .connectActivityContent a{
@@ -578,7 +584,6 @@ section#about-2 .container {
 	    background-position: center top!important;
 	    background-size: 80% !important;
 	    background-repeat: no-repeat;
-        height: 120vw !important
 	}
 
 }
@@ -749,10 +754,10 @@ section#about-2 .container {
 
 .og-grid li {
 	display: inline-block;
-	margin: 10px 5px 0 5px;
+	margin: 30px 5px 0 5px;
 	vertical-align: top;
-	height: 500px;
-	max-width: 498px;
+	min-height: 372px;
+	max-width: 1016px;
 	background-color: #f7f3fa;
 	color: black;
 }
@@ -770,12 +775,17 @@ section#about-2 .container {
 .connectActivityContent span div {
 	display: inline-block;
 	vertical-align: top;
+}
+
+.connectActivityContentTitle {
+	width: 128px;
+	display: inline-block;
 	margin-left: 55px;
 }
 
 .introduceActivityWrapper ul li {	
 	line-height: 1;
-	padding: 0px 50px 50px;
+	padding: 0px 0px 10px 50px;
 }
 .connectActivityContent.title{
 	color: #62269e;
@@ -783,9 +793,8 @@ section#about-2 .container {
 	font-size: 2.4em;	
 }
 
-/*.connectActivityContentTitle {
-	font-size: 1.4em;	
-}*/
+
+
 
 .contetnActivityDesc a {
 	color: #2cafa1;
@@ -908,6 +917,39 @@ section#about-2 .container {
 	padding: 40px 0 10px;
 	margin-bottom: 10px;
 	color: #3b3d41;
+}
+
+.introduceToggleButtonWrapper {
+	position: relative;
+	top: -115px;
+	font-size: 1.4em;
+	cursor: pointer;
+
+
+}
+
+
+.introduceToggleButton.current{
+	text-decoration : underline;
+	font-weight: bold;    
+}
+
+.introduceToggleButton.current span { 
+	width: 7px;
+	height: 7px;
+	display: inline-block;
+	background-color: #31bbb1;
+	border-radius: 7px;
+	margin-right: 8px;
+}
+
+.introduceToggleButtonTitle { 
+	width: 7px;
+    height: 7px;
+    display: inline-block;
+    background-color: #c2c2c2;
+    border-radius: 7px;
+    margin-right: 8px;
 }
 
 .og-details p {

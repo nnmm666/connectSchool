@@ -19,6 +19,10 @@ body {
   padding: 40px;
 }
 
+.partnerUni {
+  background-color:  white;
+}
+
 .mainBannerText {
   width: 1224px;
   height: 210px;
@@ -47,7 +51,7 @@ body {
 
 .applyButton {
   position: relative;
-  top: -120px;
+  top: -135px;
   left: 530px;
   width: 124px;
   height: 124px;
@@ -157,6 +161,9 @@ body {
   padding: 57px 0 0 0px;  
 }
 
+.contentActivityDesc.typeDesc {
+  max-width: 85%;
+}
 .recruitContent {
   margin-bottom: 45px !important;
 }
