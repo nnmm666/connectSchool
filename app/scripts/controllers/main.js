@@ -14,7 +14,7 @@ angular.module('testApp')
     //   'AngularJS',
     //   'Karma'
     // ];
-    $scope.currentIntroduceMenu = 'univ';
+    $scope.currentIntroduceMenu = 'connect';
     $scope.toggleSize = true;
     $scope.recruit = {
     	'<div>지원자격</div>' : "<div>· <span> 커넥트스쿨 파트너 대학에 재학중 또는 휴학중인 학생</span> <br>· 학부 2학년 이상 (전공 무관, 휴학생 가능), 남녀 모두 지원 가능<br>· 기획부터 운영까지 소프트웨어 교육의 모든 것을 경험하고 싶은 분<br>· 1년간 성실하게 온/오프라인 사전교육과 프로그램에 참여 가능한 분<br>· 평소 소프트웨어 교육에 대한 관심이 깊은 분</div>",

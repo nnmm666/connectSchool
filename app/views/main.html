@@ -187,23 +187,24 @@
       </div>   
      
 
-      <div class="container">
+      <div class="container containerRecruit">
         
         <div class="recruitContentDesc">
             <div class="introduceToggleButtonWrapper">
                 <div class="introduceToggleButton" ng-class="{ current : currentIntroduceMenu == 'univ'}" ng-click="currentIntroduceMenu = 'univ'">
-                    <span class="introduceToggleButtonTitle"></span> 
                     대학생 봉사단
+                    <span class="introduceToggleButtonTitle"></span> 
                 </div>
+                <span></span>
                 <div class="introduceToggleButton" ng-class="{ current : currentIntroduceMenu == 'connect'}" ng-click="currentIntroduceMenu = 'connect'">
+                  커넥트스쿨 교육생
                   <span class="introduceToggleButtonTitle"></span> 
-                  커넥트 봉사단
                 </div>
             </div>
         <div class="recruitContentData" ng-show="currentIntroduceMenu == 'univ'">
             <p class="connectActivityContent recruitContent" ng-repeat="(key ,value) in recruit" ng-class="{ title : key == '제목'}">
-                <span class="connectActivityContentTitle fontTwentyRegular" ng-bind-html="key"></span> 
-                <span class="contetnActivityDesc" ng-bind-html="value"> </span>
+                <span class="connectRecruitContentTitle fontTwentyRegular" ng-bind-html="key"></span> 
+                <span class="contentActivityDesc" ng-bind-html="value"> </span>
             </p>
             <div class="applyButton fontTwenty" ng-click="goApply()">
                 지원하기 >> 
@@ -212,8 +213,8 @@
 
         <div class="recruitContentData" ng-show="currentIntroduceMenu == 'connect'">
             <p class="connectActivityContent recruitContent" ng-repeat="(key ,value) in connect" ng-class="{ title : key == '제목'}">
-                <span class="connectActivityContentTitle fontTwentyRegular" ng-bind-html="key"></span> 
-                <span class="contetnActivityDesc" ng-bind-html="value"> </span>
+                <span class="connectRecruitContentTitle fontTwentyRegular" ng-bind-html="key"></span> 
+                <span class="contentActivityDesc" ng-bind-html="value"> </span>
             </p>
             <div class="applyButton fontTwenty" ng-click="goApply()">
                 지원하기 >> 
