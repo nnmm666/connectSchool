@@ -19,6 +19,10 @@ body {
   padding: 40px;
 }
 
+.partnerUni {
+  background-color:  white;
+}
+
 .mainBannerText {
   width: 1224px;
   height: 210px;
@@ -47,7 +51,7 @@ body {
 
 .applyButton {
   position: relative;
-  top: -120px;
+  top: -135px;
   left: 530px;
   width: 124px;
   height: 124px;
@@ -146,19 +150,22 @@ body {
   height: 200px;
   background-color: white;
 }
+.connectRecluitContentTitle {
+  margin-left: 55px;
+}
 
 .recruitContentDesc {
   background: url('../images/activityContentBG.png') no-repeat;
   max-width: 745px;
   height: 800px;
-  margin: 0 auto;
+  margin: 0 auto 70px;
   background-position: center top;
   color: black;
-  padding: 57px 0 0 0px;  
+  padding: 15px 0 0 0px;  
 }
 
-.recruitContent {
-  margin-bottom: 45px !important;
+.contentActivityDesc.typeDesc {
+  max-width: 85%;
 }
 
 .glyphicon {
@@ -166,12 +173,6 @@ body {
     /*more css comes along here*/
 }
 
-@media only screen and (max-width: 600px) {
-
-  .recruitContent {
-    margin-bottom: 20px !important;   
-  }
-}
 
 .activity_1 {
   width: 100%;
@@ -225,11 +226,6 @@ body {
   font-weight: bold;
 }
 
-.contetnActivityDesc{
-  min-width: 300px;
-  display: inline-block;
-  vertical-align: top;
-}
 .faqMenus.current {
   color: #31bbb1;
 
@@ -239,7 +235,7 @@ body {
   height: 300px;
   background : url('../images/recruit.png');
   padding-top: 89px;
-  margin-bottom: 50px;
+  margin-bottom: 115px;
   background-color: white;
 }
 

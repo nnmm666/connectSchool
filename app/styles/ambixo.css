@@ -49,12 +49,17 @@ textarea,
 input {
     outline: 0;
 }
+.contentActivityDesc {
+	display: inline-block;
+	vertical-align: top;
+	  min-width: 300px;
+}
 
 .contentActivityDesc.typeBold {
 	font-family: 'NanumSquare';
 	font-weight: 600;
 	font-size: 20px;
-	margin-top:-20px;
+	margin-top: 51px;
 }
 
 .contentActivityDesc.typeThin {
@@ -63,10 +68,16 @@ input {
 	font-size: 14px;	
 }
 
-.connectActivityContentTitle.typeContent {
+.connectActivityContentTitle.typeContent , .connectRecruitContentTitle.typeContent {
 	font-family: 'NanumSquare';
 	font-weight: 400;
 	font-size: 16px;		
+	width: 64px;
+	display: inline-block;
+}
+
+.connectRecruitContentTitle {
+	width: 10vw;
 }
 
 .connectActivityContent a{
@@ -222,6 +233,11 @@ svg {
     -o-backface-visibility:visible !important;
     visibility: visible !important;    */
 }
+
+.recruitContent {
+  margin-bottom: 45px;
+}
+
 
 .animated-header > .container > .logoImage {
 	background: url('../images/logo_2.png') no-repeat;
@@ -578,7 +594,6 @@ section#about-2 .container {
 	    background-position: center top!important;
 	    background-size: 80% !important;
 	    background-repeat: no-repeat;
-        height: 120vw !important
 	}
 
 }
@@ -749,10 +764,10 @@ section#about-2 .container {
 
 .og-grid li {
 	display: inline-block;
-	margin: 10px 5px 0 5px;
+	margin: 30px 5px 0 5px;
 	vertical-align: top;
-	height: 500px;
-	max-width: 498px;
+	min-height: 372px;
+	max-width: 1016px;
 	background-color: #f7f3fa;
 	color: black;
 }
@@ -764,18 +779,27 @@ section#about-2 .container {
 
 .connectActivityContent {
 	text-align: left;
-	margin-bottom: 24px;
+	margin-bottom: 45px;
 }
 
 .connectActivityContent span div {
 	display: inline-block;
 	vertical-align: top;
-	margin-left: 55px;
 }
 
+.connectActivityContentTitle {
+	width: 128px;
+	display: inline-block;
+}
+
+.connectRecruitContentTitle {
+	width: 128px;
+	display: inline-block;
+	margin-left: 55px;
+}
 .introduceActivityWrapper ul li {	
 	line-height: 1;
-	padding: 0px 50px 50px;
+	padding: 0px 0px 10px 50px;
 }
 .connectActivityContent.title{
 	color: #62269e;
@@ -783,11 +807,10 @@ section#about-2 .container {
 	font-size: 2.4em;	
 }
 
-/*.connectActivityContentTitle {
-	font-size: 1.4em;	
-}*/
 
-.contetnActivityDesc a {
+
+
+.contentActivityDesc a {
 	color: #2cafa1;
 }
 
@@ -829,7 +852,7 @@ section#about-2 .container {
 	margin: -20px 0 0 -15px;
 }
 
-.contetnActivityDesc{
+.contentActivityDesc{
 	font-family: 'NanumSquare';
 	font-weight: 400;
 }
@@ -908,6 +931,58 @@ section#about-2 .container {
 	padding: 40px 0 10px;
 	margin-bottom: 10px;
 	color: #3b3d41;
+}
+
+.introduceToggleButtonWrapper {
+	position: relative;
+	top: -78px;
+ 	font-size: 16px;
+	text-align: center;
+}
+
+.introduceToggleButtonWrapper div {
+	display: inline-block;
+}
+
+.introduceToggleButton.current{
+	font-weight: bold;    
+	color: #31bbb1;
+}
+
+.introduceToggleButton{
+	cursor: pointer;	
+	color: #3b3b3b;
+	margin: 0 15px;
+}
+
+.containerRecruit {
+	padding: 0px !important;
+}
+
+.introduceToggleButton.current span { 
+	width: 11px;
+	height: 11px;
+	display: block;
+	margin-right: 8px;
+	background-image : url('../images/tri_on.png');
+	background-repeat: no-repeat;
+	margin: 9px auto 0;
+}
+
+.introduceToggleButton span { 
+	width: 11px;
+	height: 11px;
+	display: block;
+	margin-right: 8px;
+	background-image : url('../images/tri_off.png');
+	background-repeat: no-repeat;
+	margin: 9px auto 0;
+}
+.introduceToggleButtonTitle { 
+	width: 11px;
+    height: 11px;
+    display: inline-block;
+    margin-right: 8px;
 }
 
 .og-details p {
@@ -1112,6 +1187,7 @@ section#about-2 .container {
 .tmtimeline > li .tmlabel p {
     color: #3E383A;
     font-size: 1.2em;
+    font-family: 'NanumSquare';
 }
  
 .tmtimeline > li .tmlabel:after {
@@ -1498,10 +1574,10 @@ section#about-2 .container {
 		font-size: 2vw !important;
 	}
 
-	.connectActivityContentTitle {
+	.connectActivityContentTitle , .connectRecruitContentTitle {
 		font-size: 1.8vw !important;
 	}
-	.contetnActivityDesc {
+	.contentActivityDesc {
 		font-size: 15px !important;
 	}
 
@@ -1590,11 +1666,11 @@ section#about-2 .container {
 		margin-top: 0px !important;
 	}
 
-	.contetnActivityDesc {
+	.contentActivityDesc {
 		font-size: 14px !important;
 	}
 
-	.connectActivityContentTitle div {
+	.connectActivityContentTitle div  , .connectRecruitContentTitle div{
 		font-size: 18px !important;
 	}
 }
@@ -1628,6 +1704,100 @@ section#about-2 .container {
 	
 }
 
+
+@media only screen and (max-width: 640px) {
+
+	/*.header {
+		height: 140px;
+	}*/
+	.connectSchoolSchedule {
+		margin-top : 0px !important;
+	}
+
+	.mainBannerText {
+		top: 43% !important;
+	}
+
+	.introduceDivideImage {
+		margin: 10px auto 15px;
+	}
+	.applyButton {
+	  	left: 65% !important;
+	  }
+
+	.connectActivityContentTitle .connectRecruitContentTitle {
+		font-size: 2.5vw !important;
+	}
+
+	.navbar {
+		min-height: 50px;
+	}
+
+	.logo {
+		display: inline-block;
+    	text-align: center;
+    	width: 100%;
+	}
+
+	.navbar-toggle {
+		float: none;
+		/*margin: 1em auto;*/
+		text-align: center;
+		display: block;
+		/*margin-top: -30px;*/
+		/*margin-right: auto;*/
+		/*margin-bottom: 1em;*/
+		/*margin-top: 1em;*/
+	}
+
+	.fontTwentyRegular {
+		font-size: 2.5vw !importants;
+	}
+	.introduceTitle {
+
+	}
+	#main-nav .navbar .container {
+		padding-right: 0;
+	}
+
+	.container > .navbar-header {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	svg.decor {
+		display: none;
+	}
+
+	#main-img {
+		margin-top: 0;
+	}
+
+	.tmtimeline > li .tmlabel p {
+    	font-size: 1.4em;
+    }
+
+    #contact-footer {
+    	font-size: 0.9em;
+    }
+
+	.about .social-account li {
+		margin-right: 0.65em;
+	}
+
+	.about .social-account li a {
+		font-size: 1.8em;
+	    height: 1.7em;
+	    width: 1.7em;
+	}
+ 	
+ 	.connectRecruitContentTitle{
+ 		width: 55px !important;
+ 		margin-left: 30px;
+ 	}
+}
+
+
 @media only screen and (max-width: 600px) {
 	.faqMenus {
 		display: block !important;
@@ -1637,8 +1807,19 @@ section#about-2 .container {
 		border-right: none !important;
 	}
 
-	.contetnActivityDesc {
+	.contentActivityDesc {
 		display: block;
+	}
+	.connectActivityContent {
+		margin-bottom: 20px;
+	}
+	.applyButton {
+		top: -75px;
+	}
+
+	.contentActivityDesc {
+		display: block ;
+		width: 86vw;
 	}
 
 
@@ -1648,7 +1829,10 @@ section#about-2 .container {
 	}
 
 	.recruitContent {
-		margin-bottom: 20px !important;
+		margin-bottom: 20px;
+	}
+	.connectRecruitContentTitle {
+		margin-left: 0px !important;
 	}
 
 	.recruitContentDesc {
@@ -1680,7 +1864,7 @@ section#about-2 .container {
 		font-size: 15px !important;
 	}
 
-	.connectActivityContentTitle.typeContent {
+	.connectActivityContentTitle.typeContent , .connectRecruitContentTitle.typeContent{
 		font-size: 14px !important;
 	}
 
@@ -1719,100 +1903,14 @@ section#about-2 .container {
 	}
 }
 
-.contetnActivityDesc {
+.contentActivityDesc {
 	min-width: 300px;
 }
 
-.contetnActivityDesc > div > span {
+.contentActivityDesc > div > span {
 	font-family: 'NanumSquare';
 	font-weight: 600;
 	text-decoration: underline;
-}
-
-@media only screen and (max-width: 640px) {
-
-	/*.header {
-		height: 140px;
-	}*/
-	.connectSchoolSchedule {
-		margin-top : 0px !important;
-	}
-
-	.mainBannerText {
-		top: 43% !important;
-	}
-
-	.introduceDivideImage {
-		margin: 10px auto 15px;
-	}
-	.applyButton {
-	  	left: 65% !important;
-	  }
-
-	.connectActivityContentTitle {
-		font-size: 2.5vw !important;
-	}
-
-	.navbar {
-		min-height: 50px;
-	}
-
-	.logo {
-		display: inline-block;
-    	text-align: center;
-    	width: 100%;
-	}
-
-	.navbar-toggle {
-		float: none;
-		/*margin: 1em auto;*/
-		text-align: center;
-		display: block;
-		/*margin-top: -30px;*/
-		/*margin-right: auto;*/
-		/*margin-bottom: 1em;*/
-		/*margin-top: 1em;*/
-	}
-
-	.introduceTitle {
-
-	}
-	#main-nav .navbar .container {
-		padding-right: 0;
-	}
-
-	.container > .navbar-header {
-		margin-left: 0;
-		margin-right: 0;
-	}
-
-	svg.decor {
-		display: none;
-	}
-
-	#main-img {
-		margin-top: 0;
-	}
-
-	.tmtimeline > li .tmlabel p {
-    	font-size: 1.4em;
-    }
-
-    #contact-footer {
-    	font-size: 0.9em;
-    }
-
-	.about .social-account li {
-		margin-right: 0.65em;
-	}
-
-	.about .social-account li a {
-		font-size: 1.8em;
-	    height: 1.7em;
-	    width: 1.7em;
-	}
- 
-
 }
 
 
