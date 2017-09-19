@@ -56,7 +56,7 @@ angular.module('testApp')
     		'내용' : "상대적으로 교육의 기회가 부족한 학생에게 소프트웨어 교육 기회를 제공하기 위해, 도서 산간 지역의 일선 학교와 청소년 수련관 등으로 대학생 선생님들이 직접 찾아갑니다. 소프트웨어 교육을 받길 원하지만 다양한 이유로 소외 받고 있는 학생들에게 직접 찾아가며 교육격차를 완화하는 데 힘쓰고 있습니다."
     	},
     	{
-    		'제목' : '소프트웨어 캠프',
+    		'제목' : '커넥트스쿨 캠프',
     		'일정' : '7월 22일 ~ 8월 9일 (여름방학, 개최 대학별 일정 상이)',
     		'대상' : '소프트웨어 교육을 체험하고 싶은 전국의 초등, 중등생 및 학부모',
     		'장소' : '강릉원주대학교 등 전국 29개 대학교 (행사 별로 개최 대학 상이)',
@@ -165,7 +165,7 @@ angular.module('testApp')
     }
 
     $scope.goApply = function() {
-        window.open("https://form.office.naver.com/form/responseView.cmd?formkey=NmE4N2ExYjItZGIxYS00ZjJhLTg4YmQtYWM2M2MzNDA1YTc5&sourceId=urlshare",'_blank');
+        window.open("http://www.playsw.or.kr/program/progress/2",'_blank');
     }
   });
  
