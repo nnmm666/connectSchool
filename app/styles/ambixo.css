@@ -1506,6 +1506,25 @@ section#about-2 .container {
 	cursor: pointer;
 }
 
+.cessationAlert {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1050;
+  background: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+}
+
+.cessationAlertImage {
+  background: url('../images/cessationAlert.png');
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 95%;
+}
 
 /* Media Queries
 --------------------------------------------------------*/
@@ -1848,6 +1867,18 @@ section#about-2 .container {
     display: block;
     margin: 0 auto 9px;
 }
+
+@media only screen and (max-width: 550px) {
+	.cessationAlertImage {
+	  background: url('../images/cessationAlert.png');
+	  width: 100%;
+	  height: 100%;
+	  background-repeat: no-repeat;
+	  background-position: center;
+	  background-size: 95% auto;
+	}
+}
+
 
 @media only screen and (max-width: 400px) {
 	/*.navbar-toggle {
