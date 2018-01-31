@@ -102,7 +102,7 @@ angular.module('testApp')
     }
 
     $scope.currentTab = 'capacity';
-
+    $scope.cessationAlert = true;
     $scope.menus = {
     	capacity : false,
     	support : false,
